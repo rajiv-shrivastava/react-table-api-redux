@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import UserForm from './UserForm'
+import UserForm from './reusable/UserForm'
 import { connect } from "react-redux";
 
 import {fetchUsers,submitUsers} from './actions/userActions'
@@ -16,10 +16,10 @@ class App extends React.Component {
   render(){
     return (
       <div>
-         <h1 className="text-center"> Welcome to the Event Meetup </h1>
+         <h1 className="text-center"> Create New Employee </h1>
            <div className="text-right">
-              <Link to="/users"> 
-              <button className="btn btn-sm btn-warning"> Go to Users List Page </button> 
+              <Link to="/employees"> 
+              <button className="btn btn-sm btn-warning"> Employees List  </button> 
               </Link>
               </div>
            <UserForm submitUsers={this.props.submitUsers}/>

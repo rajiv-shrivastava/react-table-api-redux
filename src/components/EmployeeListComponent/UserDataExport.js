@@ -1,7 +1,6 @@
 import React from 'react';
 import jsPDF from "jspdf";
 import "jspdf-autotable";
-import './App.css';
 import {userList} from './userList.json'
 
 class UserDataExport extends React.Component {

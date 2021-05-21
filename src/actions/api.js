@@ -18,7 +18,7 @@ const makeHeaders = () => {
 let config = {
   	headers: makeHeaders(),
   	withCredentials: false,
-  	baseURL: 'https://jsonplaceholder.typicode.com/',
+    baseURL: 'base url of api goes here............'
 }
 
 export default axios.create(config);

@@ -1,22 +1,23 @@
 import api from './api';
 
 export function fetchUsers() {
-  console.log('api.get',api.get('users'))
+  console.log('api.get',api.get('employees/get'))
   return {
-    type: 'FETCH_USERS',
-    payload: api.get('users'),
+    type: 'FETCH_EMPLOYEES',
+    payload: api.get('employees/get'),
   };
 }
 
 
-
-export function submitUsers(data) {
-  console.log('api.post',api.post('users'))
+export function addEmployee() {
+  console.log('api.get',api.get('employees/get'))
   return {
-    type: 'POST_USERS',
-    payload: api.post('users', data),
+    type: 'FETCH_EMPLOYEES',
+    payload: api.get('employees/get'),
   };
 }
+
+
 
 
 
